@@ -249,4 +249,9 @@ ALEStyleWarning             -> ALEWarning
 ALEStyleWarningSign         -> ALEWarningSign
 ALEStyleWarningSignLineNr   -> ALEWarningSignLineNr
 ; }}}
+; vim-signify {{{
+SignifySignAdd       green             none
+SignifySignChange    yellow            none
+SignifySignDelete    red               none
+; }}}
 #endif
