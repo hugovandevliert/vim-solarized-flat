@@ -1,6 +1,5 @@
 ; vim: ft=colortemplate fdm=marker
 ; Filetype specific highlight groups
-#if get(g:, '@optionprefix_extra_hi_groups', 1)
 ; vim {{{
 vimVar            -> Identifier
 vimFunc           -> Function
@@ -212,36 +211,20 @@ pandocMetadataKey                      blue               none
 pandocMetadata                         blue               none           bold
 pandocMetadataTitle                 -> pandocMetadata
 ; }}}
+; Plugin specific highlight groups
 ; ale {{{
-#if get(g:, '@optionprefix_statusline', '') ==# 'flat'
-    ALEErrorSign               red         none              bold
-    ALEInfoSign                cyan        none              bold
-    ALEWarningSign             yellow      none              bold
-    ALEErrorSignLineNr         red         none
-    ALEInfoSignLineNr          cyan        none
-    ALEWarningSignLineNr       yellow      none
-#else
-    #if get(g:, 'ale_sign_highlight_linenrs', '') ==# 1
-        ALEErrorSign               base02      red               bold
-        ALEInfoSign                base02      cyan              bold
-        ALEWarningSign             base02      yellow            bold
-    #else
-        ALEErrorSign               red         base02            bold
-        ALEInfoSign                cyan        base02            bold
-        ALEWarningSign             yellow      base02            bold
-    #endif
-    ALEErrorSignLineNr         base02      red
-    ALEInfoSignLineNr          base02      cyan
-    ALEWarningSignLineNr       base02      yellow
-#endif
-
-ALEError                       red         none              undercurl  guisp=red
-ALEErrorLine                   none        none
-ALEInfo                        cyan        none              undercurl  guisp=cyan
-ALEInfoLine                    none        none
-ALEWarning                     yellow      none              undercurl  guisp=yellow
-ALEWarningLine                 none        none
-
+ALEErrorSign               red         none              bold
+ALEInfoSign                cyan        none              bold
+ALEWarningSign             yellow      none              bold
+ALEErrorSignLineNr         red         none
+ALEInfoSignLineNr          cyan        none
+ALEWarningSignLineNr       yellow      none
+ALEError                   red         none              undercurl  guisp=red
+ALEErrorLine               none        none
+ALEInfo                    cyan        none              undercurl  guisp=cyan
+ALEInfoLine                none        none
+ALEWarning                 yellow      none              undercurl  guisp=yellow
+ALEWarningLine             none        none
 ALEStyleError               -> ALEError
 ALEStyleErrorSign           -> ALEErrorSign
 ALEStyleErrorSignLineNr     -> ALEErrorSignLineNr
@@ -254,4 +237,3 @@ SignifySignAdd       green             none
 SignifySignChange    yellow            none
 SignifySignDelete    red               none
 ; }}}
-#endif
