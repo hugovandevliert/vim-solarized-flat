@@ -213,17 +213,17 @@ pandocMetadataTitle                 -> pandocMetadata
 ; }}}
 ; Plugin specific highlight groups
 ; ale {{{
-ALEErrorSign               red         none              bold
-ALEInfoSign                cyan        none              bold
-ALEWarningSign             yellow      none              bold
+ALEErrorSign               red         none
+ALEInfoSign                cyan        none
+ALEWarningSign             yellow      none
 ALEErrorSignLineNr         red         none
 ALEInfoSignLineNr          cyan        none
 ALEWarningSignLineNr       yellow      none
-ALEError                   red         none              undercurl  guisp=red
+ALEError                   red         none              underline  guisp=red
 ALEErrorLine               none        none
-ALEInfo                    cyan        none              undercurl  guisp=cyan
+ALEInfo                    cyan        none              underline  guisp=cyan
 ALEInfoLine                none        none
-ALEWarning                 yellow      none              undercurl  guisp=yellow
+ALEWarning                 yellow      none              underline  guisp=yellow
 ALEWarningLine             none        none
 ALEStyleError               -> ALEError
 ALEStyleErrorSign           -> ALEErrorSign
