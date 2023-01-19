@@ -45,7 +45,7 @@ ToolbarLine        none              base02
 ; Visibility (dark) {{{
 CursorLineNr       base0             none              bold
 NonText            base00            none              bold
-SpecialKey         base00            base02            bold
+SpecialKey         base00            none              bold
 SpellBad           violet            none              t=underline g=undercurl s=violet
 SpellCap           violet            none              t=underline g=undercurl s=violet
 SpellLocal         yellow            none              t=underline g=undercurl s=yellow
@@ -165,7 +165,7 @@ Cursor           base03            orange
 CursorLineNr       base0             none              bold
 MatchParen         base3             base02            bold
 NonText            base00            none              bold
-SpecialKey         base00            base02            bold
+SpecialKey         base00            none              bold
 SpellBad           violet            none              t=underline g=undercurl s=violet
 SpellCap           violet            none              t=underline g=undercurl s=violet
 SpellLocal         yellow            none              t=underline g=undercurl s=yellow
