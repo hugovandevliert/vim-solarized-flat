@@ -78,7 +78,7 @@ FoldColumn           base0             none
 Folded               base0             none              bold s=base03
 IncSearch            orange            none              standout
 LineNr               base01            none
-MatchParen           base3             base02            bold
+MatchParen           base3             none              bold
 ModeMsg              blue              none
 MoreMsg              blue              none
 Pmenu                base0             base02
@@ -163,7 +163,7 @@ ToolbarLine        none              base02
 ; Visibility and cursor style (light) {{{
 Cursor           base03            orange
 CursorLineNr       base0             none              bold
-MatchParen         base3             base02            bold
+MatchParen         base3             none              bold
 NonText            base00            none              bold
 SpecialKey         base00            none              bold
 SpellBad           violet            none              t=underline g=undercurl s=violet
